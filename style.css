@@ -1,3 +1,5 @@
+/*&&&&&&&&&&&&&&&&&&& css-Reset &&&&&&&&&&&&&&&&&&&&&&&*/
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -68,7 +70,9 @@ h6 {
 #__next {
   isolation: isolate;
 }
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&& css-Reset-end &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
 
+/*############################ desktop #################################################################################*/
 body {
   background-image: url(./starter-code/assets/bg-main-desktop.png);
 }
@@ -88,23 +92,19 @@ body {
   left: 1128px;
   top: -40px;
 }
-
+/*===================== hero ==================*/
 .hero-text {
-  position: absolute;
   width: 1015px;
-  height: 176px;
-  left: 165px;
-  top: 221px;
+  margin-top: 221px;
+  margin-left: 165px;
+  margin-bottom: 321px;
 }
 
 .hero-text__h1 {
   font-weight: 700;
   font-size: 88px;
   line-height: 88px;
-  /* or 100% */
-
   letter-spacing: -1px;
-
   color: #191826;
   margin-bottom: 40px;
 }
@@ -116,13 +116,13 @@ body {
   color: #191826;
   max-width: 825px;
 }
-
+/*==================== middle-section ==================*/
 .middle-section {
-  position: absolute;
+  position: relative;
   width: 1110px;
   height: 600px;
-  left: 165px;
-  top: 860px;
+  margin-left: 165px;
+  margin-bottom: 202px;
   background: #191826;
   border-radius: 12px;
 }
@@ -152,4 +152,573 @@ body {
   top: 90px;
   background: #fa7453;
   border-radius: 12px;
+  padding: 58px 59px 48px 54px;
+}
+
+.middle-section__card--h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fcfaf9;
+  margin-bottom: 22px;
+}
+
+.middle-section__card--p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #fcfaf9;
+  max-width: 333px;
+  margin-bottom: 39px;
+}
+
+.middle-section__card--cost {
+  width: 165px;
+  height: 52px;
+  margin-bottom: 46px;
+}
+
+.middle-section__card--big-font {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 52px;
+  color: #fcfaf9;
+}
+
+.middle-section__card--month {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+  color: #fcfaf9;
+}
+
+button {
+  display: block;
+  border: none;
+}
+
+.middle-section__card--ios-button,
+.middle-section__card--android-button {
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 333px;
+  height: 61px;
+}
+
+.middle-section__card--ios-button {
+  margin-bottom: 16px;
+  background: #191826;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.18px;
+  color: #fcfaf9;
+}
+
+.middle-section__card--ios-button:hover {
+  background: #66e2dc;
+  cursor: pointer;
+}
+
+.middle-section__card--android-button {
+  background: #fcfaf9;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.18px;
+  color: #191826;
+}
+
+.middle-section__card--android-button:hover {
+  background: #ffb964;
+  cursor: pointer;
+}
+
+.middle-section__card--ios-button-icon {
+  margin-right: 7.3px;
+}
+/*===================== footer ======================*/
+footer {
+  width: 1110px;
+  height: 79px;
+
+  margin-left: 165px;
+}
+
+.footer__flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer__flex-container--left-section {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.footer__logo {
+  width: 146.09px;
+  height: 32px;
+  align-self: flex-start;
+  margin-bottom: 91px;
+}
+
+.footer__p--one,
+.footer__p--two {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  width: 366px;
+  color: #191826;
+  margin-right: 369px;
+}
+
+.footer__p--two {
+  margin-bottom: 91px;
+  width: 366px;
+}
+
+.footer__social-media {
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 20px;
+  margin-bottom: 91px;
+}
+
+.footer__social-media--icon:hover {
+  cursor: pointer;
+  background: #fa7453;
+}
+/*############################ tablet ###############################################################################*/
+@media (max-width: 768px) {
+  body {
+    background-image: url(./starter-code/assets/bg-main-tablet.png);
+  }
+
+  .header-logo {
+    position: absolute;
+    width: 146.09px;
+    height: 32px;
+    left: 39.15px;
+    top: 61.99px;
+  }
+
+  .header-right-top-image {
+    position: absolute;
+    width: 266.67px;
+    height: 400px;
+    left: 537px;
+    top: -32px;
+  }
+  /*===================== hero ==================*/
+  .hero-text {
+    width: 520px;
+    height: 332px;
+    margin-top: 189px;
+    margin-left: 39px;
+    margin-bottom: 249px;
+  }
+
+  .hero-text__h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.727273px;
+    color: #191826;
+    margin-bottom: 28px;
+  }
+
+  .hero-text__p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #191826;
+    max-width: 825px;
+  }
+  /*==================== middle-section ==================*/
+  .middle-section {
+    position: relative;
+    width: 696px;
+    height: 600px;
+    margin-left: 33px;
+    margin-bottom: 183px;
+    background: #191826;
+    border-radius: 12px;
+  }
+
+  .middle-section__illustration-app {
+    position: absolute;
+    width: 270.21px;
+    height: 556px;
+    left: 64px;
+    top: -138px;
+    z-index: 9;
+  }
+
+  .middle-section__bg-pattern-2 {
+    position: absolute;
+    width: 280px;
+    height: 420px;
+    left: 229px;
+    top: -31px;
+  }
+
+  .middle-section__card {
+    position: absolute;
+    width: 399px;
+    height: 546px;
+    right: 58px;
+    top: 150px;
+    background: #fa7453;
+    border-radius: 12px;
+    padding: 48px 49px 48px 48px;
+  }
+
+  .middle-section__card--h2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fcfaf9;
+    margin-bottom: 12px;
+  }
+
+  .middle-section__card--p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fcfaf9;
+    max-width: 302px;
+    margin-bottom: 36px;
+  }
+
+  .middle-section__card--cost {
+    width: 165px;
+    height: 52px;
+    margin-bottom: 32px;
+  }
+
+  .middle-section__card--big-font {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+    color: #fcfaf9;
+  }
+
+  .middle-section__card--month {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: #fcfaf9;
+  }
+
+  button {
+    display: block;
+  }
+
+  .middle-section__card--ios-button,
+  .middle-section__card--android-button {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 296px;
+    height: 61px;
+  }
+
+  .middle-section__card--ios-button {
+    margin-bottom: 16px;
+    background: #191826;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #fcfaf9;
+  }
+
+  .middle-section__card--android-button {
+    background: #fcfaf9;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #191826;
+  }
+
+  .middle-section__card--ios-button-icon {
+    margin-right: 7.3px;
+  }
+  /*===================== footer ======================*/
+  footer {
+    width: 669px;
+    height: 143px;
+
+    margin-left: 33px;
+  }
+
+  .footer__flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__flex-container--left-section {
+    display: flex;
+    flex-direction: column;align-content: space-between;
+    flex-grow: 1;
+  }
+
+  .footer__logo {
+    width: 146.09px;
+    height: 32px;
+    align-self: flex-start;
+    margin-bottom: 32px;
+  }
+
+  .footer__p--one,
+  .footer__p--two {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    width: 366px;
+    color: #191826;
+    margin-right: 230px;
+  }
+
+  .footer__p--two {
+    margin-bottom: 85px;
+    width: 366px;
+  }
+
+  .footer__social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 29px;
+  }
+}
+
+/*############################ mobile ###############################################################################*/
+@media (max-width: 375px) {
+  body {
+    background-image: url(./starter-code/assets/bg-main-desktop.png);
+    background-repeat: repeat;
+  }
+
+  .header-logo {
+    position: absolute;
+    width: 146.09px;
+    height: 32px;
+    left: 166.15px;
+    top: 61.99px;
+  }
+
+  .header-right-top-image {
+    position: absolute;
+    width: 312px;
+    height: 468px;
+    left: 1128px;
+    top: -40px;
+  }
+  /*===================== hero ==================*/
+  .hero-text {
+    width: 1015px;
+    margin-top: 221px;
+    margin-left: 165px;
+    margin-bottom: 321px;
+  }
+
+  .hero-text__h1 {
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 88px;
+    letter-spacing: -1px;
+    color: #191826;
+    margin-bottom: 40px;
+  }
+
+  .hero-text__p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #191826;
+    max-width: 825px;
+  }
+  /*==================== middle-section ==================*/
+  .middle-section {
+    position: relative;
+    width: 1110px;
+    height: 600px;
+    margin-left: 165px;
+    margin-bottom: 202px;
+    background: #191826;
+    border-radius: 12px;
+  }
+
+  .middle-section__illustration-app {
+    position: absolute;
+    width: 312px;
+    height: 642px;
+    left: 102px;
+    top: -147px;
+    z-index: 9;
+  }
+
+  .middle-section__bg-pattern-2 {
+    position: absolute;
+    width: 312px;
+    height: 468px;
+    left: 336px;
+    top: -20px;
+  }
+
+  .middle-section__card {
+    position: absolute;
+    width: 446px;
+    height: 625px;
+    right: 95px;
+    top: 90px;
+    background: #fa7453;
+    border-radius: 12px;
+    padding: 58px 59px 48px 54px;
+  }
+
+  .middle-section__card--h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fcfaf9;
+    margin-bottom: 22px;
+  }
+
+  .middle-section__card--p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #fcfaf9;
+    max-width: 333px;
+    margin-bottom: 39px;
+  }
+
+  .middle-section__card--cost {
+    width: 165px;
+    height: 52px;
+    margin-bottom: 46px;
+  }
+
+  .middle-section__card--big-font {
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 52px;
+    color: #fcfaf9;
+  }
+
+  .middle-section__card--month {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: #fcfaf9;
+  }
+
+  button {
+    display: block;
+  }
+
+  .middle-section__card--ios-button,
+  .middle-section__card--android-button {
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 333px;
+    height: 61px;
+  }
+
+  .middle-section__card--ios-button {
+    margin-bottom: 16px;
+    background: #191826;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #fcfaf9;
+  }
+
+  .middle-section__card--android-button {
+    background: #fcfaf9;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #191826;
+  }
+
+  .middle-section__card--ios-button-icon {
+    margin-right: 7.3px;
+  }
+  /*===================== footer ======================*/
+  footer {
+    width: 1110px;
+    height: 79px;
+
+    margin-left: 165px;
+  }
+
+  .footer__flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__flex-container--left-section {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .footer__logo {
+    width: 146.09px;
+    height: 32px;
+    align-self: flex-start;
+    margin-bottom: 91px;
+  }
+
+  .footer__p--one,
+  .footer__p--two {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    width: 366px;
+    color: #191826;
+    margin-right: 369px;
+  }
+
+  .footer__p--two {
+    margin-bottom: 91px;
+    width: 366px;
+  }
+
+  .footer__social-media {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    height: 20px;
+    margin-bottom: 91px;
+  }
 }

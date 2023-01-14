@@ -75,6 +75,7 @@ h6 {
 /*############################ desktop #################################################################################*/
 body {
   background-image: url(./starter-code/assets/bg-main-desktop.png);
+  background-size: contain;
 }
 
 .header-logo {
@@ -312,54 +313,51 @@ footer {
   }
 
   .header-right-top-image {
-    position: absolute;
-    width: 266.67px;
-    height: 400px;
-    left: 537px;
-    top: -32px;
+    display: none;
   }
   /*===================== hero ==================*/
   .hero-text {
-    width: 520px;
-    height: 332px;
-    margin-top: 189px;
-    margin-left: 39px;
-    margin-bottom: 249px;
+    width: 327px;
+    height: 320px;
+    margin-top: 136px;
+    margin-left: 24px;
+    margin-bottom: 166px;
   }
 
   .hero-text__h1 {
     font-weight: 700;
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 40px;
+    line-height: 48px;
     letter-spacing: -0.727273px;
     color: #191826;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
 
   .hero-text__p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 26px;
     color: #191826;
-    max-width: 825px;
+    max-width: 327px;
+    width: 327px;
   }
   /*==================== middle-section ==================*/
   .middle-section {
     position: relative;
-    width: 696px;
+    width: 375px;
     height: 600px;
-    margin-left: 33px;
-    margin-bottom: 183px;
+    margin-left: 0px;
+    margin-bottom: 390px;
     background: #191826;
     border-radius: 12px;
   }
 
   .middle-section__illustration-app {
     position: absolute;
-    width: 270.21px;
-    height: 556px;
-    left: 64px;
-    top: -138px;
+    width: 208.97px;
+    height: 430px;
+    left: 80.67px;
+    top: -98px;
     z-index: 9;
   }
 
@@ -368,7 +366,7 @@ footer {
     width: 280px;
     height: 420px;
     left: 229px;
-    top: -31px;
+    top: 0px;
   }
 
   .middle-section__card {
@@ -475,7 +473,8 @@ footer {
 
   .footer__flex-container--left-section {
     display: flex;
-    flex-direction: column;align-content: space-between;
+    flex-direction: column;
+    align-content: space-between;
     flex-grow: 1;
   }
 
@@ -513,16 +512,15 @@ footer {
 /*############################ mobile ###############################################################################*/
 @media (max-width: 375px) {
   body {
-    background-image: url(./starter-code/assets/bg-main-desktop.png);
-    background-repeat: repeat;
+    background-image: url(./starter-code/assets/bg-main-mobile.png);
   }
 
   .header-logo {
     position: absolute;
     width: 146.09px;
     height: 32px;
-    left: 166.15px;
-    top: 61.99px;
+    left: 24.15px;
+    top: 39.99px;
   }
 
   .header-right-top-image {
@@ -562,7 +560,7 @@ footer {
     width: 1110px;
     height: 600px;
     margin-left: 165px;
-    margin-bottom: 202px;
+    margin-bottom: 390px;
     background: #191826;
     border-radius: 12px;
   }
@@ -578,44 +576,44 @@ footer {
 
   .middle-section__bg-pattern-2 {
     position: absolute;
-    width: 312px;
-    height: 468px;
-    left: 336px;
-    top: -20px;
+    width: 280px;
+    height: 420px;
+    left: 48px;
+    top: 0px;
   }
 
   .middle-section__card {
     position: absolute;
-    width: 446px;
-    height: 625px;
-    right: 95px;
-    top: 90px;
+    width: 375px;
+    height: 546px;
+    right: 0px;
+    top: 380px;
     background: #fa7453;
     border-radius: 12px;
-    padding: 58px 59px 48px 54px;
+    padding: 48px 37px;
   }
 
   .middle-section__card--h2 {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
+    font-size: 32px;
+    line-height: 40px;
     color: #fcfaf9;
-    margin-bottom: 22px;
+    margin-bottom: 12px;
   }
 
   .middle-section__card--p {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 28px;
     color: #fcfaf9;
-    max-width: 333px;
-    margin-bottom: 39px;
+    max-width: 302px;
+    margin-bottom: 36px;
   }
 
   .middle-section__card--cost {
     width: 165px;
     height: 52px;
-    margin-bottom: 46px;
+    margin-bottom: 32px;
   }
 
   .middle-section__card--big-font {
@@ -643,7 +641,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 333px;
+    width: 296px;
     height: 61px;
   }
 
@@ -673,22 +671,23 @@ footer {
   }
   /*===================== footer ======================*/
   footer {
-    width: 1110px;
-    height: 79px;
-
-    margin-left: 165px;
+    width: 327px;
+    height: auto;
+    margin-left: 24px;
   }
 
   .footer__flex-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 80px;
   }
 
   .footer__flex-container--left-section {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     flex-grow: 1;
   }
 
@@ -696,7 +695,7 @@ footer {
     width: 146.09px;
     height: 32px;
     align-self: flex-start;
-    margin-bottom: 91px;
+    margin-bottom: 32px;
   }
 
   .footer__p--one,
@@ -704,14 +703,15 @@ footer {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    width: 366px;
+    width: 327px;
     color: #191826;
-    margin-right: 369px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .footer__p--two {
-    margin-bottom: 91px;
-    width: 366px;
+    margin-bottom: 64px;
+    width: 327px;
   }
 
   .footer__social-media {
@@ -719,6 +719,6 @@ footer {
     justify-content: space-around;
     width: 100px;
     height: 20px;
-    margin-bottom: 91px;
+    margin-bottom: 0px;
   }
 }
